@@ -1,0 +1,25 @@
+name: Build Geode Mod
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Geode SDK
+        uses: geode-sdk/setup-geode@v1
+
+      - name: Build mod
+        run: geode build
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: geode-mod
+          path: build/*.geode

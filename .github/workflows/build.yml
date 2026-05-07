@@ -12,14 +12,16 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup MSVC
-        uses: ilammy/msvc-dev-cmd@v1
+      - name: Setup Geode CLI
+        run: |
+          pip install geode-cli
 
-      - name: Setup CMake
-        uses: lukka/get-cmake@latest
+      - name: Install Geode SDK
+        run: |
+          geode sdk install
 
       - name: Configure
-        run: cmake -B build
+        run: cmake -B build -DGEODE_SDK=%HOMEPATH%\.geode\sdk
 
       - name: Build
         run: cmake --build build --config Release

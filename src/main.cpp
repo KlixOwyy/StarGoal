@@ -8,7 +8,7 @@ class $modify(MyMenuLayer, MenuLayer) {
     bool init() {
         if (!MenuLayer::init()) return false;
 
-        auto sprite = CCSprite::create("icon.png");
+        auto sprite = CCSprite::create("icon.png"_spr);
         sprite->setScale(0.7f);
 
         auto btn = CCMenuItemSpriteExtra::create(

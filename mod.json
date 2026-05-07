@@ -9,13 +9,13 @@
   "id": "klixowy.stargoal",
   "name": "StarGoal",
   "developer": "KlixOwy",
-  "version": "0.0.2",
+  "version": "0.0.21",
   "description": "First test.",
   "resources": {
-    "files": [
+    "sprites": [
       "resources/icon.png",
-      "resources/thumbnail.png"
+      "resources/logo.png"
     ]
   },
-  "thumbnail": "resources/thumbnail.png"
+  "thumbnail": "resources/logo.png"
 }

@@ -1,4 +1,4 @@
-name: StarGoal
+name: Build Geode Mod
 
 on:
   push:
@@ -6,20 +6,20 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup Geode SDK
+      - name: Setup Geode
         uses: geode-sdk/setup-geode@v1
 
-      - name: Build mod
+      - name: Build Mod
         run: geode build
 
-      - name: Upload artifact
+      - name: Upload Build
         uses: actions/upload-artifact@v4
         with:
-          name: geode-mod
-          path: build/*.geode
+          name: StarGoal-Windows
+          path: build/**/*.geode

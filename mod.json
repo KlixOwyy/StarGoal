@@ -1,0 +1,21 @@
+{
+  "geode": "5.7.1",
+  "gd": {
+    "win": "2.2081",
+    "android": "2.2081",
+    "mac": "2.2081",
+    "ios": "2.2081"
+  },
+  "id": "klixowy.stargoal",
+  "name": "StarGoal",
+  "developer": "KlixOwy",
+  "version": "0.0.2",
+  "description": "First test.",
+  "resources": {
+    "files": [
+      "resources/icon.png",
+      "resources/thumbnail.png"
+    ]
+  },
+  "thumbnail": "resources/thumbnail.png"
+}

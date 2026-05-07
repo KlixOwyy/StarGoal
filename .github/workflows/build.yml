@@ -1,4 +1,4 @@
-name: Build Geode Mod
+name: StarGoal
 
 on:
   push:
